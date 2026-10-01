@@ -1,15 +1,16 @@
-public class Main {
-    public static void main(String[] args) {
+// Button on the home page
+function sayHello() {
+    alert("Hello! Welcome to my website 😊");
+}
 
-        // Variables
-        int a = 10;
-        int b = 20;
+// Contact form
+function submitForm(event) {
+    event.preventDefault();
 
-        // Calculate sum
-        int sum = a + b;
+    const name = document.getElementById("name").value;
 
-        // Display results
-        System.out.println("Hello, World!");
-        System.out.println("The sum is: " + sum);
-    }
+    alert("Thank you, " + name + "! Your message has been received.");
+
+    // Clear the form
+    event.target.reset();
 }
