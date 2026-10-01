@@ -4,62 +4,373 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>My Website</title>
+    <title>FORMA — Interior Design Studio</title>
 
-    <!-- Connect CSS -->
     <link rel="stylesheet" href="style.css">
+
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500&family=Playfair+Display:wght@400;500&display=swap" rel="stylesheet">
 </head>
 
 <body>
 
     <!-- Navigation -->
-    <nav>
-        <h2>My Website</h2>
+    <header class="navbar">
+        <a href="#" class="logo">FORMA<span>.</span></a>
 
-        <ul>
-            <li><a href="#home">Home</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
-    </nav>
+        <nav id="navMenu">
+            <a href="#work">Work</a>
+            <a href="#studio">Studio</a>
+            <a href="#services">Services</a>
+            <a href="#contact">Contact</a>
+        </nav>
 
-    <!-- Home Section -->
-    <section id="home" class="hero">
-        <h1>Hello, I'm Alex 👋</h1>
-        <p>Welcome to my personal website.</p>
+        <button class="menu-btn" id="menuBtn">
+            <span></span>
+            <span></span>
+        </button>
+    </header>
 
-        <button onclick="sayHello()">Say Hello</button>
-    </section>
 
-    <!-- About Section -->
-    <section id="about">
-        <h2>About Me</h2>
-        <p>
-            I am learning web development and enjoy creating
-            websites using HTML, CSS, and JavaScript.
-        </p>
-    </section>
+    <!-- Hero -->
+    <main>
 
-    <!-- Contact Section -->
-    <section id="contact">
-        <h2>Contact Me</h2>
+        <section class="hero">
 
-        <form onsubmit="submitForm(event)">
-            <input type="text" id="name" placeholder="Your Name" required>
+            <div class="hero-content">
+                <p class="eyebrow">INTERIOR DESIGN STUDIO — 2026</p>
 
-            <input type="email" id="email" placeholder="Your Email" required>
+                <h1>
+                    Spaces that<br>
+                    <em>feel like home.</em>
+                </h1>
 
-            <textarea id="message" placeholder="Your Message" required></textarea>
+                <p class="hero-text">
+                    We create calm, timeless interiors where
+                    architecture, light and everyday life come together.
+                </p>
 
-            <button type="submit">Send Message</button>
-        </form>
-    </section>
+                <a href="#work" class="outline-btn">
+                    Explore our work
+                    <span>↗</span>
+                </a>
+            </div>
 
+            <div class="hero-image">
+                <img
+                    src="https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?auto=format&fit=crop&w=1800&q=85"
+                    alt="Minimal modern living room"
+                >
+            </div>
+
+        </section>
+
+
+        <!-- Introduction -->
+        <section class="intro">
+
+            <p class="eyebrow">OUR APPROACH</p>
+
+            <div class="intro-content">
+                <h2>
+                    Thoughtful interiors,
+                    <em>quietly beautiful.</em>
+                </h2>
+
+                <p>
+                    FORMA is an independent interior design studio focused
+                    on residential and boutique spaces. Our approach is
+                    simple: remove the unnecessary and let materials,
+                    proportions and natural light speak.
+                </p>
+            </div>
+
+        </section>
+
+
+        <!-- Selected Work -->
+        <section class="work" id="work">
+
+            <div class="section-heading">
+                <div>
+                    <p class="eyebrow">SELECTED WORK</p>
+                    <h2>Our interiors</h2>
+                </div>
+
+                <p>
+                    A collection of spaces designed
+                    around the people who live in them.
+                </p>
+            </div>
+
+
+            <div class="projects">
+
+                <!-- Project 1 -->
+                <article class="project project-large">
+
+                    <div class="project-image">
+                        <img
+                            src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=1600&q=85"
+                            alt="Warm minimalist living room"
+                        >
+                    </div>
+
+                    <div class="project-info">
+                        <div>
+                            <h3>Casa Alba</h3>
+                            <p>Residential · Barcelona</p>
+                        </div>
+
+                        <span>01</span>
+                    </div>
+
+                </article>
+
+
+                <!-- Project 2 -->
+                <article class="project">
+
+                    <div class="project-image">
+                        <img
+                            src="https://images.unsplash.com/photo-1600566753086-00f18fb6b3ea?auto=format&fit=crop&w=1400&q=85"
+                            alt="Minimal dining room interior"
+                        >
+                    </div>
+
+                    <div class="project-info">
+                        <div>
+                            <h3>Oak House</h3>
+                            <p>Residential · Copenhagen</p>
+                        </div>
+
+                        <span>02</span>
+                    </div>
+
+                </article>
+
+
+                <!-- Project 3 -->
+                <article class="project">
+
+                    <div class="project-image">
+                        <img
+                            src="https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?auto=format&fit=crop&w=1400&q=85"
+                            alt="Contemporary bedroom interior"
+                        >
+                    </div>
+
+                    <div class="project-info">
+                        <div>
+                            <h3>Still House</h3>
+                            <p>Residential · Kyoto</p>
+                        </div>
+
+                        <span>03</span>
+                    </div>
+
+                </article>
+
+
+                <!-- Project 4 -->
+                <article class="project project-large">
+
+                    <div class="project-image">
+                        <img
+                            src="https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?auto=format&fit=crop&w=1600&q=85"
+                            alt="Elegant modern interior"
+                        >
+                    </div>
+
+                    <div class="project-info">
+                        <div>
+                            <h3>Atelier 18</h3>
+                            <p>Commercial · Paris</p>
+                        </div>
+
+                        <span>04</span>
+                    </div>
+
+                </article>
+
+            </div>
+
+        </section>
+
+
+        <!-- Studio -->
+        <section class="studio" id="studio">
+
+            <div class="studio-image">
+                <img
+                    src="https://images.unsplash.com/photo-1616486338812-3dadae4b4ace?auto=format&fit=crop&w=1500&q=85"
+                    alt="Elegant interior with natural materials"
+                >
+            </div>
+
+            <div class="studio-content">
+
+                <p class="eyebrow">THE STUDIO</p>
+
+                <h2>
+                    Less, but<br>
+                    <em>better.</em>
+                </h2>
+
+                <p>
+                    We believe the most beautiful spaces don't need
+                    to shout. They reveal themselves through texture,
+                    proportion, natural materials and the changing
+                    quality of light.
+                </p>
+
+                <p>
+                    From the first sketch to the final object,
+                    we work closely with our clients to create
+                    interiors that feel personal and enduring.
+                </p>
+
+                <a href="#contact" class="text-link">
+                    Meet the studio →
+                </a>
+
+            </div>
+
+        </section>
+
+
+        <!-- Services -->
+        <section class="services" id="services">
+
+            <div class="section-heading">
+                <div>
+                    <p class="eyebrow">WHAT WE DO</p>
+                    <h2>Our services</h2>
+                </div>
+            </div>
+
+
+            <div class="service-list">
+
+                <div class="service">
+                    <span>01</span>
+
+                    <div>
+                        <h3>Interior Architecture</h3>
+                        <p>
+                            Spatial planning, material palettes,
+                            lighting and architectural detailing.
+                        </p>
+                    </div>
+
+                    <span class="arrow">↗</span>
+                </div>
+
+
+                <div class="service">
+                    <span>02</span>
+
+                    <div>
+                        <h3>Interior Design</h3>
+                        <p>
+                            Furniture, colour, textiles and objects
+                            selected to create cohesive interiors.
+                        </p>
+                    </div>
+
+                    <span class="arrow">↗</span>
+                </div>
+
+
+                <div class="service">
+                    <span>03</span>
+
+                    <div>
+                        <h3>Styling & Art Direction</h3>
+                        <p>
+                            The finishing details that give a space
+                            its character and personality.
+                        </p>
+                    </div>
+
+                    <span class="arrow">↗</span>
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- Contact -->
+        <section class="contact" id="contact">
+
+            <p class="eyebrow">START A PROJECT</p>
+
+            <h2>
+                Let's create something<br>
+                <em>beautiful together.</em>
+            </h2>
+
+            <a href="mailto:hello@forma.studio" class="contact-email">
+                hello@forma.studio
+            </a>
+
+            <form id="contactForm">
+
+                <div class="form-row">
+                    <input
+                        type="text"
+                        id="name"
+                        placeholder="Your name"
+                        required
+                    >
+
+                    <input
+                        type="email"
+                        id="email"
+                        placeholder="Your email"
+                        required
+                    >
+                </div>
+
+                <textarea
+                    id="message"
+                    placeholder="Tell us about your project..."
+                    required
+                ></textarea>
+
+                <button type="submit" class="submit-btn">
+                    Send enquiry →
+                </button>
+
+            </form>
+
+        </section>
+
+    </main>
+
+
+    <!-- Footer -->
     <footer>
-        <p>© 2026 My Website</p>
+
+        <div class="footer-logo">
+            FORMA<span>.</span>
+        </div>
+
+        <p>
+            Interior design for considered living.
+        </p>
+
+        <div class="footer-bottom">
+            <span>© 2026 FORMA Studio</span>
+            <span>All rights reserved.</span>
+        </div>
+
     </footer>
 
-    <!-- Connect JavaScript -->
+
     <script src="script.js"></script>
 
 </body>
